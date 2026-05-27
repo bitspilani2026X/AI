@@ -5,7 +5,7 @@ import requests
 app = Flask(__name__)
 CORS(app)
 
-RASA_URL = "http://localhost:5005/webhooks/rest/webhook"
+RASA_URL = "https://your-rasa-service.onrender.com/webhooks/rest/webhook"
 
 @app.route("/chat", methods=["POST"])
 def chat():
@@ -22,4 +22,4 @@ def chat():
     return jsonify(rasa_response.json())
 
 if __name__ == "__main__":
-    app.run(port=5000)
+   app.run(host="0.0.0.0", port=5000)
