@@ -73,7 +73,7 @@ async function sendMessage() {
     ========================= */
  
     const response = await fetch(
-      "http://localhost:5005/webhooks/rest/webhook",
+      "https://ai-g1jw.onrender.com",
       {
         method: "POST",
  
