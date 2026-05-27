@@ -72,7 +72,7 @@ async function sendMessage() {
        RASA API CALL
     ========================= */
  
-    const response = await fetch("https://ai-g1jw.onrender.com/chat"),
+    const response = await fetch("https://ai-g1jw.onrender.com/webhooks/rest/webhook"),
       {
         method: "POST",
  
